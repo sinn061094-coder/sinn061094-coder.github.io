@@ -16,49 +16,71 @@
 <p><strong>App:</strong> MagiCut — Video Editor &amp; Maker (<code>com.magicut.app</code>)<br>
 <strong>Last updated:</strong> October 13, 2026</p>
 
-<p>This Privacy Policy explains how MagiCut ("we", "us"), operated by GumLabs, handles information when you use the MagiCut video editor app.</p>
+<p>This Privacy Policy explains how MagiCut ("we", "us"), operated by GumLabs, handles information when you use the MagiCut video editor and player app.</p>
 
 <h2>1. Your videos and media stay on your device</h2>
-<p>MagiCut edits your videos and photos <strong>on your device</strong>. Trimming, merging, filters, effects, text &amp; stickers, music, speed, reverse/boomerang, voice, blur, and background changes are processed locally, and exports are saved to your device. We do not upload or store your personal media on our servers for editing.</p>
-<p>The <strong>AI Magic Background</strong> feature runs entirely <strong>on your device</strong> using Google ML Kit Selfie Segmentation — your video frames are not sent to any server for background processing.</p>
-<p>Some features use the network: the <strong>Music</strong> tool can fetch royalty-free tracks from the third-party <strong>Jamendo</strong> service, and <strong>Cast to TV</strong> streams your video to a Chromecast on your local network. Neither sends your personal videos to us. MagiCut does not download or stream videos from links or from other online platforms.</p>
+<p>MagiCut edits your videos <strong>on your device</strong>. Trimming, merging, filters, effects, text &amp; stickers, music, speed, reverse/boomerang, voice effects, blur, rotate/crop and background changes are processed locally. Exported videos are saved to your device (<code>Movies/MagiCut</code>), and audio you extract from a video is saved to <code>Music/MagiCut</code>. We do not upload or store your personal media on our servers.</p>
+<p>The <strong>AI Magic Background</strong> feature runs entirely <strong>on your device</strong> using Google ML Kit Selfie Segmentation — your video frames are not sent to any server. If you choose a photo as the new background, you pick it with the Android system picker; MagiCut does not request access to your photo library.</p>
+<p>The <strong>video player</strong> plays videos stored on your device. Subtitle files are opened only when you pick one.</p>
+<p><strong>Status Saver</strong> lists only images and videos that are already on your device, in a folder you choose with the Android system folder picker. Items you save are copied into your own gallery (<code>Movies/StatusSaver</code> and <code>Pictures/StatusSaver</code>). Nothing is uploaded, and nothing is downloaded from the internet.</p>
+<p>The <strong>Private Folder</strong> keeps copies of the videos you move into it in the app's private storage on your device. Your 4-digit PIN is stored only as a salted hash, never as the PIN itself. If you unlock with your fingerprint or face, Android handles the check; MagiCut never receives your biometric data. The Private Folder is excluded from device backups and transfers.</p>
+<p>Some features use the network:</p>
+<ul>
+  <li><strong>Music</strong> — the online music library searches the third-party <strong>Jamendo</strong> service for royalty-free tracks. Jamendo receives your search words and the tracks you choose; chosen tracks are saved in the app's private storage.</li>
+  <li><strong>Cast to TV</strong> — streams the video you are watching to a Chromecast on your local network, using Google Cast.</li>
+</ul>
+<p>Neither sends your personal videos to us. MagiCut does not download or stream videos from links or from other online platforms.</p>
+<p>MagiCut does not request access to your location, contacts, camera or microphone.</p>
 
 <h2>2. Information we (and our providers) collect</h2>
 <ul>
-  <li><strong>Advertising identifiers &amp; ad data</strong> — we use Google AdMob to show ads, which may collect an advertising ID, device identifiers, and coarse/derived location for ad delivery and measurement.</li>
-  <li><strong>Purchase information</strong> — Google Play Billing processes MagiCut Pro subscriptions, lifetime purchases, and Remove Ads; we receive purchase status to unlock features. We do not receive your full payment details.</li>
-  <li><strong>Diagnostics &amp; analytics</strong> — we use Google Firebase Analytics and Firebase Crashlytics to collect crash logs, app-instance identifiers, and in-app usage events (e.g. which tools are used, exports, purchases) to improve the app.</li>
+  <li><strong>Advertising</strong> — we use Google AdMob to show ads. AdMob may collect your advertising ID, device identifiers, IP address and approximate location derived from it, and how you interact with ads, for ad delivery, measurement and fraud prevention. On Android versions that support it, AdMob may also use the Android Privacy Sandbox (Topics and Attribution Reporting).</li>
+  <li><strong>Purchase information</strong> — Google Play Billing processes MagiCut Pro subscriptions, the lifetime purchase and Remove Ads; we receive the purchase status to unlock features. We never receive your payment details.</li>
+  <li><strong>Analytics</strong> — Google Firebase Analytics collects an app-instance identifier, the advertising ID where available, device model, Android version, app version, language, approximate country, how the app was installed, and usage events. Besides events Firebase records automatically (such as app opens, sessions and app updates), MagiCut logs whether an export succeeded and whether it was watermarked, when the Pro screen is shown, when a Pro purchase completes (subscription or lifetime), and whether you have Pro.</li>
+  <li><strong>Crash reports</strong> — Google Firebase Crashlytics collects crash details (stack traces, device model, Android version, app version, and device state such as free memory at the time of the crash) and reports of failed exports, linked to a random installation identifier.</li>
+  <li><strong>Support emails</strong> — if you choose <strong>Settings &gt; Send feedback</strong>, your email app opens with the app version, Android version and device model filled in. We receive your email address and anything you write, and use it only to reply and fix problems.</li>
 </ul>
+<p>Analytics and crash reports are linked to random identifiers, not your name or email address.</p>
 
 <h2>3. Permissions</h2>
 <ul>
-  <li><strong>Media / storage</strong> — to read videos and photos you choose to edit or play, and to save your exports.</li>
-  <li><strong>Internet / network state</strong> — for ads, the music library, and purchase verification.</li>
-  <li><strong>Private Folder</strong> — a 4-digit PIN and any videos you move into it are stored in the app's private on-device storage; we cannot see them.</li>
+  <li><strong>Videos / storage</strong> — to list, play and edit the videos on your device (on Android 14 and later you can allow only selected videos), and on Android 9 and earlier to save exports and Status Saver copies. MagiCut does not request access to your photo library.</li>
+  <li><strong>Notifications, foreground service and wake lock</strong> — to keep playing in the background with playback controls in a notification.</li>
+  <li><strong>Audio settings</strong> — for the player's equalizer.</li>
+  <li><strong>Biometric</strong> — optional fingerprint or face unlock for the Private Folder.</li>
+  <li><strong>Internet / network state</strong> — for ads, analytics and crash reports, the online music library, purchases, Cast to TV, and Google Play's update and review prompts.</li>
+  <li><strong>Advertising ID</strong> — for ads and ad measurement.</li>
+  <li><strong>Google Play Billing</strong> — for MagiCut Pro and Remove Ads.</li>
 </ul>
 
 <h2>4. How we use information</h2>
-<p>To provide and improve the app, deliver and measure ads, process purchases and subscriptions, fix crashes, and comply with legal obligations. We do <strong>not</strong> sell your personal data.</p>
+<p>To provide and improve the app, deliver and measure ads, process purchases and subscriptions, fix crashes, answer support requests, and comply with legal obligations. We do <strong>not</strong> sell your personal data.</p>
 
 <h2>5. Ads &amp; consent</h2>
-<p>Ads are provided by Google AdMob. For users in the EEA/UK, we request consent (via Google's UMP) before serving personalized ads. You can reduce personalized ads in your device settings. MagiCut Pro or the Remove Ads purchase removes ads.</p>
+<p>Ads are provided by Google AdMob. Where the law requires it (for example in the EEA and the UK), we ask for your consent through Google's User Messaging Platform before ads are loaded, and you can change your choice at any time in <strong>Settings &gt; Ad privacy options</strong>. You can also reset or delete your advertising ID, or opt out of personalized ads, in your device settings.</p>
+<p>MagiCut Pro and the Remove Ads purchase turn off ads. Watching an optional rewarded ad turns ads off for 3 hours.</p>
 
 <h2>6. Subscriptions</h2>
-<p>MagiCut Pro is an auto-renewing subscription with an optional free trial; it renews unless cancelled before the period ends. Manage or cancel anytime in Google Play &gt; Subscriptions. A one-time lifetime purchase is also offered.</p>
+<p>MagiCut Pro is an auto-renewing subscription with an optional free trial; it renews unless cancelled before the period ends. Manage or cancel anytime in Google Play &gt; Subscriptions. A one-time lifetime purchase of Pro and a one-time Remove Ads purchase are also offered.</p>
 
 <h2>7. Children</h2>
 <p>MagiCut is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
 <h2>8. Data retention &amp; deletion</h2>
-<p>Locally processed media remains on your device under your control. For any data held by our providers (ads, analytics, purchases), you may request access or deletion by contacting us at sinn061094@gmail.com.</p>
+<p>Locally processed media remains on your device under your control.</p>
+<p><strong>Delete your data in the app:</strong> go to <strong>Settings &gt; Delete my data</strong>. This erases the data MagiCut stores on your device — your video list, favourites, watch history and resume positions, drafts, saved settings, Status Saver folder choice, downloaded music tracks, and cached files. It also resets the app's analytics identity and, when you are online, its crash-reporting identity, so past diagnostics can no longer be linked to your install, and deletes crash reports not yet sent. Videos in the Private Folder and its PIN are deleted only if you choose to include them, since they may be your only copy. Your own media in shared storage (your gallery, exported videos, extracted audio and Status Saver copies) is never touched — those files belong to you and remain on your device.</p>
+<p>Deleting data in the app clears what is stored on your device and unlinks future data collection. Analytics and crash data already uploaded are kept and deleted according to Google Firebase's retention periods; the app cannot recall them once sent. Ad data is handled under Google's own policies. Your MagiCut Pro entitlement is a Google Play purchase, not personal data, and is not affected — it can be restored after reinstalling.</p>
+<p>Uninstalling MagiCut removes everything stored in the app's private storage, <strong>including videos in the Private Folder</strong>. If Android backup is turned on, your device may include MagiCut's settings and lists in your Google backup (never the Private Folder); you can manage this in your device settings.</p>
+<p>For any other data held by our providers (ads, analytics, purchases), or any questions, you may also request access or deletion by contacting us at sinn061094@gmail.com.</p>
 
 <h2>9. Third-party services</h2>
 <ul>
-  <li>Google AdMob — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li>Google Play Billing — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-  <li>Google Firebase Analytics &amp; Crashlytics — <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a></li>
+  <li>Google AdMob and User Messaging Platform — <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a></li>
+  <li>Google Play Billing, In-App Review and In-App Updates — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>Google Firebase (Analytics &amp; Crashlytics) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://firebase.google.com/support/privacy">Firebase Privacy &amp; Security</a></li>
   <li>Google ML Kit (on-device Selfie Segmentation for Magic Background) — <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms</a></li>
-  <li>Jamendo (royalty-free music catalog) — <a href="https://www.jamendo.com/legal/privacy-policy">Jamendo Privacy Policy</a></li>
+  <li>Google Cast (Cast to TV) — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>Jamendo (royalty-free music library) — <a href="https://www.jamendo.com/legal/privacy-policy">Jamendo Privacy Policy</a></li>
 </ul>
 
 <h2>10. Changes</h2>
